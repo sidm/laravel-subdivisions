@@ -1,6 +1,6 @@
 <?php
 
-namespace Webpatser\Subdivisions;
+namespace sidm\Subdivisions;
 
 use Illuminate\Support\Facades\Facade;
 

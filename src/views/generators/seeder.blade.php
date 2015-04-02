@@ -16,7 +16,7 @@ class SubdivisionsSeeder extends Seeder {
         $subdivisions = Subdivisions::getList();
         foreach ($subdivisions as $subdivisionId => $country){
             DB::table(\Config::get('laravel-subdivisions::table_name'))->insert(array(
-                'id' => $countryId,
+                'id' => $subdivisionId,
                 'country' => ((isset($country['country'])) ? $country['country'] : null),
                 'country_name' => ((isset($country['country_name'])) ? $country['country_name'] : null),
                 'iso_3166_2' => $country['iso_3166_2'],

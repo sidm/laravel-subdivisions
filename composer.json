@@ -1,6 +1,6 @@
 {
 	"name" : "sidm/laravel-subdivisions",
-	"description" : "Laravel Subdivisions is a bundle for Laravel 4.2, providing what is roughly all ISO 3166_2 subdivisions for all countries. Based on the awesome work Webpatser did for Countries.",
+	"description" : "Laravel Subdivisions is a bundle for Laravel 4.2, providing what is roughly all ISO 3166_2 subdivisions (a.k.a., states, provinces, etc.) for all countries. Based on the awesome work Webpatser did in his laravel-countries package.",
 	"type" : "laravel-library",
 	"authors" : [{
 			"name" : "Sid Millspaugh",

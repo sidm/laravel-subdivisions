@@ -15,10 +15,18 @@ class SubdivisionsSeeder extends Seeder {
         //Get all of the subdivisions
         $subdivisions = Subdivisions::getList();
         foreach ($subdivisions as $subdivisionId => $country){
+            
+            // Get the country ID for this subdivision
+            if(\Config::get('laravel-subdivisions::country_table_name') && \Config::get('laravel-subdivisions::iso_3166_2_row_name'))
+            {
+                $country_id = DB::select('select id from '.\Config::get('laravel-subdivisions::country_table_name').' where '.'.\Config::get('laravel-subdivisions::iso_3166_2_row_name').'.' = ? LIMIT 1', array($country['iso_3166_2']));
+            }
+
             DB::table(\Config::get('laravel-subdivisions::table_name'))->insert(array(
                 'id' => $subdivisionId,
                 'country' => ((isset($country['country'])) ? $country['country'] : null),
                 'country_name' => ((isset($country['country_name'])) ? $country['country_name'] : null),
+                'country_id' => ((isset($country_id)) ? $country_id : null),
                 'iso_3166_2' => $country['iso_3166_2'],
                 'region' => ((isset($country['region'])) ? $country['region'] : null),
                 'region_alt' => ((isset($country['region_alt'])) ? $country['region_alt'] : null)

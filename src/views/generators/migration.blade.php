@@ -19,6 +19,7 @@ class SetupSubdivisionsTable extends Migration {
 
 			$table->string('country', 2)->default('');
 			$table->string('country_name', 255)->default('');
+			$table->integer('country_id')->default('');
 			$table->string('iso_3166_2', 6)->default('');
 			$table->string('region', 255)->default('');
 			$table->string('region_alt', 255)->nullable('');

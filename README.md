@@ -3,6 +3,7 @@
 [![Total Downloads](https://poser.pugx.org/sidm/laravel-subdivisions/downloads.svg)](https://packagist.org/packages/sidm/laravel-subdivisions)
 [![Latest Stable Version](https://poser.pugx.org/sidm/laravel-subdivisions/v/stable.svg)](https://packagist.org/packages/sidm/laravel-subdivisions)
 [![Latest Unstable Version](https://poser.pugx.org/sidm/laravel-subdivisions/v/unstable.svg)](https://packagist.org/packages/sidm/laravel-subdivisions)
+[![License](https://poser.pugx.org/sidm/laravel-subdivisions/license.svg)](https://packagist.org/packages/sidm/laravel-subdivisions)
 
 Laravel Subdivisions is a bundle for Laravel 4.2, providing what is roughly all ISO 3166_2 subdivisions (a.k.a., states, provinces, etc.) for all countries. Based on the awesome work Webpatser did in his laravel-countries package.
 

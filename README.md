@@ -73,9 +73,11 @@ If you are using the Webpatser/laravel-countries package to use this in a form y
 then in a form to use countries may do the following:
 
     {{ Form::label('country', 'Country') }}<br>
-    {{ Form::select('country', $countries, '840') }} // 840 will default to the United States :us:
+    // 840 will default to the United States
+    {{ Form::select('country', $countries, '840') }}
     
 finally for states you may do the following:
 
     {{ Form::label('state', 'State/Province/Region') }}<br>
-    {{ Form::select('state', $states, '4133') }} // 4133 will default to Alabama
+    // 4133 will default to Alabama
+    {{ Form::select('state', $states, '4133') }}

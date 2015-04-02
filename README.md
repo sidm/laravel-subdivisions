@@ -24,11 +24,20 @@ Now add the alias.
     )
     
 
-## Model
+## Configuration
 
-You can start by publishing the configuration. This is an optional step, it contains the table name and does not need to be altered. If the default name `subdivisions` suits you, leave it. Otherwise run the following command
+Start by publishing the configuration. The first variable is the table name, if the default name `subdivisions` is fine you should not modify it.
+
+The next two variables are very important:
+    
+    'country_table_name' => 'countries',
+    'iso_3166_2_column_name' => 'iso_3166_2',
+    
+If you only want subdivisions and do not have a countries table both of these values should be changed to null (i.e., ''). If you are using the Webpatser/laravel-countries package the defaults should work fine. If you are using another package, or have rolled your own, the `country_table_name` should be set to the table name that holds your list of countries, and `iso_3166_2_column_name` should be set to the name of the column that contains the iso_3166_2 values for each country.
 
     $ php artisan config:publish sidm/laravel-subdivisions
+    
+## Model
 
 Next generate the migration file:
 

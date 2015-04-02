@@ -18,15 +18,15 @@ class SubdivisionsServiceProvider extends ServiceProvider {
 	 */
 	protected $defer = false;
 
-        /**
-        * Bootstrap the application.
-        *
-        * @return void
-        */
-        public function boot()
-        {
-            $this->package('sidm/laravel-subdivisions');
-        }        
+    /**
+    * Bootstrap the application.
+    *
+    * @return void
+    */
+    public function boot()
+    {
+        $this->package('sidm/laravel-subdivisions');
+    }        
         
 	/**
 	 * Register everything.

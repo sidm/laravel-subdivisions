@@ -5,7 +5,7 @@ namespace sidm\Subdivisions;
 use Illuminate\Support\ServiceProvider;
 
 /**
- * CountryListServiceProvider
+ * SubdivisionsServiceProvider
  *
  */ 
 

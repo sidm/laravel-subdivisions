@@ -17,20 +17,11 @@ class SubdivisionsSeeder extends Seeder {
         foreach ($subdivisions as $subdivisionId => $country){
             DB::table(\Config::get('laravel-subdivisions::table_name'))->insert(array(
                 'id' => $countryId,
-                'capital' => ((isset($country['capital'])) ? $country['capital'] : null),
-                'citizenship' => ((isset($country['citizenship'])) ? $country['citizenship'] : null),
-                'country_code' => $country['country-code'],
-                'currency' => ((isset($country['currency'])) ? $country['currency'] : null),
-                'currency_code' => ((isset($country['currency_code'])) ? $country['currency_code'] : null),
-                'currency_sub_unit' => ((isset($country['currency_sub_unit'])) ? $country['currency_sub_unit'] : null),
-                'full_name' => ((isset($country['full_name'])) ? $country['full_name'] : null),
+                'country' => ((isset($country['country'])) ? $country['country'] : null),
+                'country_name' => ((isset($country['country_name'])) ? $country['country_name'] : null),
                 'iso_3166_2' => $country['iso_3166_2'],
-                'iso_3166_3' => $country['iso_3166_3'],
-                'name' => $country['name'],
-                'region_code' => $country['region-code'],
-                'sub_region_code' => $country['sub-region-code'],
-                'eea' => (bool)$country['eea'],
-                'calling_code' => $country['calling_code']
+                'region' => ((isset($country['region'])) ? $country['region'] : null),
+                'region_alt' => ((isset($country['region_alt'])) ? $country['region_alt'] : null)
             ));
         }
     }

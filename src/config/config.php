@@ -27,7 +27,7 @@ return array(
   |
   */
   'country_table_name' => 'countries',
-  'iso_3166_2_row_name' => 'iso_3166_2',
+  'iso_3166_2_column_name' => 'iso_3166_2',
 
 
 );

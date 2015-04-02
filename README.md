@@ -61,3 +61,21 @@ You may now run it with the artisan migrate command:
     $ php artisan migrate --seed
     
 After running this command the filled subdivisions table will be available
+
+## Example
+
+If you are using the Webpatser/laravel-countries package to use this in a form you can place the following in your controller:
+
+    $countries = Countries::lists('name', 'id');
+    $states = Subdivisions::where('country_id', '=', 840)->lists('region', 'id');
+    return View::make('yourview.create', compact('countries', 'states'));
+    
+then in a form to use countries may do the following:
+
+    {{ Form::label('country', 'Country') }}<br>
+    {{ Form::select('country', $countries, '840') }} // 840 will default to the United States :us:
+    
+finally for states you may do the following:
+
+    {{ Form::label('state', 'State/Province/Region') }}<br>
+    {{ Form::select('state', $states, '4133') }} // 4133 will default to Alabama

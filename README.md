@@ -70,13 +70,13 @@ If you are using the Webpatser/laravel-countries package to use this in a form y
     $states = Subdivisions::where('country_id', '=', 840)->lists('region', 'id');
     return View::make('yourview.create', compact('countries', 'states'));
     
-then in a form to use countries may do the following:
+Then in a form to use countries you may do the following:
 
     {{ Form::label('country', 'Country') }}<br>
     // 840 will default to the United States
     {{ Form::select('country', $countries, '840') }}
     
-finally for states you may do the following:
+Finally for states you may do the following:
 
     {{ Form::label('state', 'State/Province/Region') }}<br>
     // 4133 will default to Alabama

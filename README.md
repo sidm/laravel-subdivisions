@@ -35,6 +35,8 @@ The next two variables are very important:
     
 If you only want subdivisions and do not have a countries table both of these values should be changed to null (i.e., ''). If you are using the Webpatser/laravel-countries package the defaults should work fine. If you are using another package, or have rolled your own, the `country_table_name` should be set to the table name that holds your list of countries, and `iso_3166_2_column_name` should be set to the name of the column that contains the iso_3166_2 values for each country.
 
+When you have modified the configuration file (src/config/config.php) run the following command:
+
     $ php artisan config:publish sidm/laravel-subdivisions
     
 ## Model

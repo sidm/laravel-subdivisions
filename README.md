@@ -64,7 +64,7 @@ After running this command the filled subdivisions table will be available
 
 ## Example
 
-If you are using the Webpatser/laravel-countries package to use this in a form you can place the following in your controller:
+If you are using the Webpatser/laravel-countries package to use this in a form you can place the following in any controller:
 
     $countries = Countries::lists('name', 'id');
     $states = Subdivisions::where('country_id', '=', 840)->lists('region', 'id');

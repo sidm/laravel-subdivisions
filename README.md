@@ -9,7 +9,7 @@ Add `sidm/laravel-subdivisions` to `composer.json`.
 
     "sidm/laravel-subdivisions": "dev-master"
     
-Run `composer update` to pull down the latest version of Country List.
+Run `composer update` to pull down the latest version of the Subdivision List.
 
 Edit `app/config/app.php` and add the `provider` and `filter`
 

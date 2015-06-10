@@ -12830,13 +12830,6 @@
         "region": "Vesturland",
         "region_alt": ""
     },
-    "1833": {
-        "country": "ISO",
-        "country_name": "Country",
-        "iso_3166_2": "ISO2",
-        "region": "Region",
-        "region_alt": "AltName1"
-    },
     "1834": {
         "country": "IT",
         "country_name": "Italy",
@@ -30699,20 +30692,6 @@
         "country_name": "Zimbabwe",
         "iso_3166_2": "ZW-MI",
         "region": "Midlands",
-        "region_alt": ""
-    },
-    "4386": {
-        "country": "",
-        "country_name": "",
-        "iso_3166_2": "",
-        "region": "",
-        "region_alt": ""
-    },
-    "4387": {
-        "country": "",
-        "country_name": "",
-        "iso_3166_2": "6",
-        "region": "",
         "region_alt": ""
     }
 }
